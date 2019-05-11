@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hvary.mr.crawler.mapper.HeroMapper">
+
+    <select id="list" resultType="com.hvary.mr.crawler.entity.Hero">
+        select * from hero
+        <where>
+            <if test="star!=null">
+               and star=#{star}
+            </if>
+        </where>
+    </select>
+</mapper>

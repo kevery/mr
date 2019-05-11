@@ -1,0 +1,23 @@
+##Æô¶¯SeimiCrawler
+#seimi.crawler.enabled=true
+#seimi.crawler.names=mo
+
+
+#app
+server:
+  port: 8086
+
+#spring
+spring:
+  devtools:
+    restart:
+      enabled: false
+
+  # MYSQL DATABASE CONFIG
+  datasource:
+    url: jdbc:mysql://47.98.193.46:3306/warframe
+    username: warframe
+    password: '000000'
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
