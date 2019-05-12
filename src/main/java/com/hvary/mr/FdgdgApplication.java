@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.ddfg.fdgdg.crawler.mapper")
+@MapperScan("com.hvary.mr.crawler.mapper")
 public class FdgdgApplication {
 
     public static void main(String[] args) {

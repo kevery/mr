@@ -38,7 +38,8 @@ public class FdgdgApplicationTests {
         List<Hero> heroes = heroMapper.selectList(new QueryWrapper<>());
 
         System.out.println(heroes.size());
-        List<Hero> list = heroMapper.list(new Hero());
+        Hero hero = new Hero().setStar(6);
+        List<Hero> list = heroMapper.list(hero);
         System.out.println(list.size());
     }
 }

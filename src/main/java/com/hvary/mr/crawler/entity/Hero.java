@@ -1,14 +1,16 @@
 package com.hvary.mr.crawler.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class Hero {
     private Long id;
 
-    private int star;
+    private Integer star;
 
-    private int isPublic;
+    private Integer isPublic;
 
     private String heroName;
 
